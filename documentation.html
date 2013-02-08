@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Statix Landing Documentation</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/theme-blue.css">
+        <style>
+        	body, .ribbon-bottom-m{
+        		background-color:#f5f5f5;
+        		background-image:none;
+        	}
+        	h1 {
+        		color:#666;
+        	}
+        	h3 {
+				font-weight:bold;
+				font-size:20px;
+        	}
+        	hr {
+        		border-bottom:1px solid #ccc;
+        		border-top:1px solid #fff;
+        	}
+        </style>
+    </head>
+    <body>
+    	<header>
+       		<div class="ribbon-top">
+       			<div class="ribbon-top-m">
+       			</div>
+       		</div>
+       		<div class="ribbon-mid">
+       			<div class="ribbon-mid-m">
+       				<div class="ribbon-content clearfix">
+	       				<div class="logo" style="text-align:center; margin:0 auto">
+							<h1><a href="javascript:void(0)">Statix<span class="white">Documentation</span></a></h1>
+						</div>
+					</div> 
+       			</div>
+       		</div>
+       		<div class="ribbon-bottom">
+       			<div class="ribbon-bottom-m">
+       				<div class="left"></div>
+       				<div class="right"></div>
+       			</div>
+       		</div>
+        </header>
+    	<div class="container white-bg" style="background-color:#f5f5f5;">
+    		<br/>
+			<h1>Table of Contents</h1>
+			<hr/>
+			<ol>
+				<li>
+					<a href="#1">1. Setting Up</a>
+				</li>
+				<li>
+					<a href="#2">2. Styling</a>
+				</li>
+				<li>
+					<a href="#3">3. Classes</a>
+				</li>
+				<li>
+					<a href="#4">4. Contact Form</a>
+				</li>
+				<li>
+					<a href="#5">5. Subscriber Form</a>
+				</li>
+				<li>
+					<a href="#6">6. Support</a>
+				</li>
+			</ol>
+			<br/>
+			<br/>
+	
+			<h1 id="1">Setting Up</h1>
+			<a href="#">Back to top</a>
+			<hr/>
+			<p>Hello, and thank you for purchasing my theme, Statix Landing. I hope you enjoy using it!
+			</p>
+			<p>To start, extract the package and upload its contents to your server. Index.html is the template file and should be functional without further setup.
+			</p>
+			<p>Index.php is a php version of index.html with the color swapper sidebar (for demo purposes). The other php and txt files included are used by the subscription and contact forms.
+			</p>
+			<p>The contact form will need to modified so that it sends emails to the correct address, more details about that <a href="#5">here</a>. 
+			</p> 		
+			<p>Ensure that PHP is supported by your server, or else the contact form and subscription form scripts won't work.
+			</p>
+			<p>The dummy text included in the template is hard-coded into the page. Change them at your leisure. 
+			</p>
+			<br/>
+			<br/>
+			
+			<h1 id="2">Styling</h1>
+			<a href="#">Back to top</a>
+			<hr/>
+			<h3>Color Schemes</h3>
+			<p>Statix Landing comes with five predefined color schemes and a light/dark option. The color scheme can be selected by changing the line:
+				<p>
+				<code>
+       			&lt;link rel="stylesheet" href="css/theme-blue.css"&gt;
+       			</code>
+       			</p>
+       		<p>Change 
+       			<code>
+       			theme-blue.css
+       			</code>
+       			to one of the following:
+       		</p>
+       			<ul>
+       				<li>theme-blue.css</li>
+       				<li>theme-teal.css</li>
+       				<li>theme-green.css</li>
+       				<li>theme-red.css</li>
+       				<li>theme-orange.css</li>
+       			</ul>
+       		<p>The light and dark theme for the main content body of the page can be chosen by changing the line <code>&lt;div class="container white-bg content"&gt;</code>. <code>white-bg</code> can be swapped for <code>black-bg</code>, which enables the darker template.
+       		<br/>
+       		<img src="img/light_dark.png"/>
+       		</p>
+       		<br/>
+			<h3>Bootstrap</h3>
+			<p>Statix Landing is built with the Bootstrap css framework. Statix Landing uses Bootstrap's 12-column responsive grid. The main.css stylesheet overrides some of the default styles included in the original Bootstrap package. Learn about Bootstrap <a href="http://twitter.github.com/bootstrap/">here</a>.
+			</p>
+			<br/>
+			<h3>JavaScript</h3>
+			<p>JavaScript is used in a few spots to style the page.</p>
+			<p>The slider images are vertically aligned by the <code>equalize_slider()</code> function.
+			</p>
+			<p>Feature boxes don't look good if they aren't all the same height in a row. They can be forced into the same height with <code>equalize_divs()</code> so that their bottom borders align horizontally. This can be enabled by giving the <code>row-fluid</code> element a class of <code>js-same-height</code>. For example <code>&lt;div class="row-fluid js-same-height"&gt;</code>
+			</p>
+			<p>Images and their hover features are handled by JavaScript, not CSS.
+			</p>
+			<br/>
+			<br/>
+			
+			<h1 id="3">Classes</h1>
+			<a href="#">Back to top</a>
+			<hr/>
+			<h3>Grid</h3>
+			<p>This theme uses the 12-column grid by Bootstrap extensively. In a nutshell, create a row using <code>&lt;div class="row-fluid"&gt;</code>, then create a div of width <em>x</em> columns with <code>&lt;div class="span<em>x</em>"&gt;</code> where <em>x</em> is the number of columns to fill (range 1 to 12). Learn more <a href="http://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem">here</a>.
+			</p>
+			<p>This theme wraps the Bootstrap <code>row-fluid</code> class with a <code>row-padding</code> class. This is simply for padding the row and it is recommended that you use it to surround all rows and content. 
+			</p>
+			<p>A typical hierarchy for a row should look as follows:</p>
+			<pre>
+				<code>
+&lt;!-- Ribbon --&gt;
+&lt;div class=&quot;ribbon aligncenter&quot;&gt;
+     		&lt;h2&gt;title&lt;/h2&gt;
+     		&lt;p class=&quot;strong&quot;&gt;caption&lt;/p&gt;
+     	&lt;/div&gt;
+&lt;!-- Row --&gt;
+&lt;div class=&quot;row-padding&quot;&gt;
+    &lt;div class=&quot;row-fluid&quot;&gt;
+		&lt;div class=&quot;span12&quot;&gt;	&lt;!-- Or multiple spans --&gt;
+			&lt;div class=&quot;feature-box&quot;&gt; &lt;!-- Or box for no bg --&gt;
+				&lt;h2&gt;subtitle&lt;/h2&gt;
+				&lt;!-- content --&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+			</pre>
+			<br/>
+			<h3>Ribbons</h3>
+			<p>The ribbon headings are a custom component of this theme. Simply add a <code>&lt;div class="ribbon"&gt;&lt;/div"&gt;</code> inside the div you want to overlay and it will fold around its parent. JavaScript takes care of styling the ribbons by appending extra components to it (such as the background folds).
+			</p>
+			<p>Ribbons will only work on divs with 0px horizontal margin and padding, such as the main <code>container</code> classes.
+			</p>
+			<p><code>h1</code> or <code>h2</code> headings should be used in the ribbons.
+			</p>
+			<p>All ribbons are created with CSS3, including large main header ribbon of the site. This means that changing their colors can be done by simply changing the style sheet (as seen in the different CSS files for the different color schemes).  
+			</p>
+			<div style="width:400px; height:200px; margin:0; padding:0" class="feature-box">
+				<div class="ribbon">sample ribbon</div>
+			</div>
+			<br/>
+			<h3>Buttons</h3>
+			<p>This theme comes with two primary button classes, <code>btn-statix</code> and <code>btn-dark</code>. These classes extend Bootstrap's original <code>btn</code> class. 
+			</p>
+			<p><code>btn-statix</code> creates a large button that matches the theme's color scheme. 
+			<br/><a href="javascript:void(0)" class="btn btn-statix">Sample Teal Theme</a>
+			</p>
+			<p><code>btn-dark</code> creates a dark button, as seen in the footer where it is used as the subscribe button for the newsletter. 
+			<br/><a href="javascript:void(0)" class="btn btn-dark">Sample Dark Button</a>
+			</p>
+			<p>Be sure to also include the <code>btn</code> class for the same element when using these two custom classes.
+			</p>
+			<br/>
+			<h3>Icons</h3>
+			<p>Icons such as <i class="icon-shopping-cart icon"></i> are created using the <code>&lt;i&gt;</code> class. Read more in the Bootstrap <a href="http://twitter.github.com/bootstrap/base-css.html#icons">documentation</a>.
+			</p>
+			<p>Large custom icons such as: <br/> 
+				<div class="round-icon checkmark"></div>
+				are custom for this template and are created like so: <br/><code>&lt;div class="round-icon checkmark"&gt;&lt;/div&gt;
+				</code>
+			</p>
+			<p>
+			Instead of <code>checkmark</code>, you can use one of many other classes available to create different icons. Check the Icons section of the stylesheet <code>main.css</code> near the bottom to see all the ones available.
+			</p>
+			<br/>
+			<h3>Images</h3>
+			<p>Images with the <code>hover</code> class will respond and turn light when hovered over. This feature is JavaScript based.
+			</p>
+				<a href="javascript:void(0)"><img src="img/sample1.jpg" class="hover" style="width:200px">
+				</a>
+			<br/>
+			<br/>
+			<h3>Feature Boxes</h3>
+			<p>This theme divides content into boxes and wraps the content into nice shadowed boxes for styling and layout padding. 
+			</p>
+			<p>Use the <code>box</code> class for a layout-only box (no background or shadow), and use the <code>feature-box</code> class to wrap content in a stylish shadowed box.
+			</p>
+			<div class="row-fluid">
+				<div class="span4"> 
+					<div class="feature-box">
+						<h1>Sample Box</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus imperdiet rhoncus. Nulla id ligula turpis.
+						</p>
+					</div> 
+				</div>
+				<div class="span4"> 
+					<div class="feature-box">
+						<br/>
+						<img src="img/sample1.jpg">
+					</div> 
+				</div>
+			</div>
+			<br/>
+			<p>Feature boxes should be used within a div with <code>container white-bg</code> <code>container dark-bg</code> classes. 
+			</p>
+			<br/>
+			<br/>
+			<h3>Slider</h3>
+			<p>This theme users Flexslider as the main slider. See details <a href="http://www.woothemes.com/flexslider/">here</a>.
+			</p>
+			<p>Slide content is inserted into:
+				<code>
+				&lt;div class="flexslider"&gt;
+					&lt;ul class="slides"&gt;
+						&lt;li&gt;
+							&lt;!-- content here --&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				</code>
+			</p>
+			<p>This theme's default slider content divides data into left and right sections using <code>&lt;div class="slider-text"&gt;</code> and <code>&lt;div class="slider-image"&gt;</code>. They take up 50% of the slider each by default. The images are vertically aligned by JavaScript in the slider by default.</p>
+			<p>Change the image sources to your liking to change the images in the slider as well as in the components on the rest of the page.
+			</p>
+			<p>A <code>&lt;div class="container"&gt;</code> also wraps the content for extra padding.
+			</p>
+			<br/>
+			<h3>Lightbox</h3>
+			<p>This theme uses Lightbox for image popups. Read simple documentation <a href="http://lokeshdhakar.com/projects/lightbox2/">here</a>.
+			<p>Wrap an <code>img</code> thumbnail element inside of an anchor link, and link it to the full sized image. Add <code>rel="lightbox"</code> to the anchor tag and you are good to go. Example: 
+			<code>
+				&lt;a href="img/sample4.jpg" rel="lightbox"&gt;&lt;img src="img/sample4_sm.jpg"/&gt;&lt;/a&gt;
+			</code>
+			<p>You can also group images together into a gallery by adding a group name inside square brackets to the rel attribute like so: <code>rel="lightbox[groupname]"</code>.
+			</p>
+			<p>You can add a description by adding a <code>title</code> attribute with the value set to the description in the anchor link, such as <code>title="my caption"</code>. 
+			</p>
+			<br/>
+			<br/>
+			<h3>Elastislide Gallery</h3>
+			<p>This theme uses a modified version of the Elastislide gallery. See documentation <a href="http://tympanus.net/Development/Elastislide/">here</a>.
+			</p>
+			<p>The sample gallery incorporates the aforementioned <code>hover</code> class and lightbox functionality. This gives it the hover effect and the lightbox popup.
+			</p>
+			<br/>
+			<br/>
+			<h3>Testimonials</h3>
+			<p>Testimonials are placed in an instance of Flexslider. The image for each is automatically rounded and floated to the left side of the testimonial.
+			</p>
+			<p>The quotes should be placed inside <code>&lt;p&gt;</code> tags and the names should be placed in <code>&lt;small&gt;</code> tags.
+			</p>
+			<p>The image should be placed before the quote, and should have 1:1 dimensions (it will be resized to 100px by 100px).
+			</p>
+			<br/>
+			<br/>
+			
+			<h1 id="4">Contact Form</h1>
+			<a href="#">Back to top</a>
+			<hr/>
+			<p>The theme's contact form uses Ajax to send the user's details in an email to you. You will need to change the default email address by changing send_email.php. 
+			</p>
+			<p>Change <code>$contact_email = 'bobbyli68@gmail.com'</code> from my email address to your own (keep it wrapped in the single quotes).
+			</p>
+			<p>After this, the email form should be fully functional. It will send you basic plain-text emails with the information that the users enter. You can modify the script to give style the email itself if you'd like.
+			</p>
+			<p>PHP must be installed on your server for this to work. The script uses the PHP <code>mail</code> function. More info <a href="http://php.net/manual/en/function.mail.php">here</a>.
+			</p>
+			<p>Users can access the contact page by the small email icons in the header and footer, or by the large 'Email Us' button in the footer.
+			</p>
+			
+			<br/>
+			<br/>
+			<h1 id="5">Subscriber Form</h1>
+			<a href="#">Back to top</a>
+			<hr/>
+			<p>The theme's subscribe form uses Ajax to add user emails to a .txt file by default. This requires no set up, simply check the latest version of newsletter_emails.txt on your server to see the list of emails that have been entered. 
+			</p>
+			<h3>MailChimp Integration</h3>
+			<p>This theme's subscribe form in the footer is styled to support MailChimp's embed code. Create your embedded form in MailChimp (List -&gt; For Your Website -&gt; Super Slim Form).
+			<br/><br/>
+			<img src="img/form.png" style="border:1px solid #444;">
+			<p>Copy the provided HTML code. You only need everything inside and including the <code>form</code> tag, the outside divs and styles should not be added to this theme.
+			</p>
+			<p>Finally, replace the <code>form</code> with the MailChimp <code>form</code> and you are done.
+			</p>
+			<br/>
+			<br/>
+			<h1 id="6">Support</h1>
+			<a href="#">Back to top</a>
+			<hr/>
+			<p>Please contact me either on Themeforest or at <a href="mailto:bobbyli68@gmail.com">bobbyli68@gmail.com</a> if you need support or want to report any errors.
+			</p>
+			<p>Once again I'd like to thank you personally for giving my theme a try. Good luck on your site!
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			2012 bobbydigitals from Themeforest.net
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+		<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+
+		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script>
+        /*ribbons*/
+        $(document).ready(function(){
+    		$('.ribbon').after('<div class="ribbon-left"></div><div class="ribbon-right"></div><div class="clearboth"></div>');
+    		resize_ribbons();        
+        });
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+.sidebar{
+	position:fixed;
+	left:0px;
+	padding:5px 5px 10px 5px;
+	background-color:#efefef;
+	z-index:802;
+	border:1px solid #bbb;
+	top:10%;
+	font-size:10px;
+	color:#888;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	width:30px;
+}
+
+.sidebar hr{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ccc;
+	margin:5px;	
+}
+
+.circle-red, .circle-green, .circle-orange, .circle-teal, .circle-blue, .circle-white, .circle-black{
+	width:15px;
+	height:15px;
+	display:block;
+	margin:0 auto;
+	border:1px solid #f5f5f5;
+}
+.circle-white{
+	background-color:#eee;
+	border:1px solid #aaa !important;	
+}
+.circle-black{
+	background-color:#222;	
+}
+.circle-red{
+	background-color:#FF0000;
+}
+
+.circle-blue{
+	background-color:#3AAACF;
+}
+
+.circle-teal{
+	background-color:#008A7C;
+}
+
+.circle-orange{
+	background-color:#DF8800;
+}
+
+.circle-green{
+	background-color:#5AC600;
+}
+.circle-red:hover{
+	background-color:#FF2222;
+}
+
+.circle-blue:hover{
+	background-color:#5ACAEF;
+}
+
+.circle-teal:hover{
+	background-color:#20AA9C;
+}
+
+.circle-orange:hover{
+	background-color:#FFA820;
+}
+
+.circle-green:hover{
+	background-color:#7AE620;
+}
+.circle-white:hover{
+	background-color:#fff;	
+}
+.circle-black:hover{
+	background-color:#555;	
+}
+
+@media ( max-width :499px){
+	.sidebar{
+		display:none;
+	}	
+}

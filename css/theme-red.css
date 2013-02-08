@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Template: 	Statix Landing
+   Author:		http://themeforest.net/user/bobbydigitals
+   ========================================================================== */
+
+/*=Color Scheme Red
+#B21508	#862D26	#540000	#CA281C	#E94539
+*/
+
+a {
+	color: #B21508;
+}
+
+.logo h1 a {
+	text-shadow: 0 1px 0 #F96559;
+}
+
+.ribbon{
+	moz-box-shadow:    0px 2px 5px #540000;
+  	-webkit-box-shadow: 0px 2px 5px #540000;
+  	box-shadow:         0px 2px 5px #540000;
+  	text-shadow: 0 -1px #862D26;
+}
+
+.ribbon-left, .ribbon-right{
+	color: #862D26;
+}
+
+.ribbon-left{
+	border-right:24px solid #862D26;
+}
+
+.ribbon-right{
+	border-left: 24px solid #862D26;
+}
+.ribbon-mid, .ribbon-bottom{
+	background-color:#862D26;
+}
+
+.ribbon, .ribbon-mid-m{
+	background-color:#E94539;
+	background-image: -moz-linear-gradient(top, #E94539, #CA281C);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E94539),
+		to(#CA281C) );
+	background-image: -webkit-linear-gradient(top, #E94539, #CA281C);
+	background-image: -o-linear-gradient(top, #E94539, #CA281C);
+	background-image: linear-gradient(to bottom, #E94539, #CA281C);
+}
+
+.ribbon-top-m {
+	background-color:#E94539;
+}
+
+.ribbon-bottom .right{
+	border-left: 10px solid #540000;
+	border-right: 10px solid #862D26;
+	border-bottom:10px solid #862D26;
+	border-top: 10px solid #540000;
+}
+
+.ribbon-bottom .left{
+	border-left: 10px solid #862D26;
+	border-right: 10px solid #540000;
+	border-bottom:10px solid #862D26;
+	border-top: 10px solid #540000;
+}
+
+.round-icon{
+	background-color:#B21508;
+}
+
+.btn-statix {
+	text-shadow: 0 -1px 0 #B21508;
+	background-color: #CA281C;
+	background-image: -moz-linear-gradient(top, #CA281C, #B21508);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CA281C),
+		to(#B21508) );
+	background-image: -webkit-linear-gradient(top, #CA281C, #B21508);
+	background-image: -o-linear-gradient(top, #CA281C, #B21508);
+	background-image: linear-gradient(to bottom, #CA281C, #B21508);
+	background-repeat: repeat-x;
+	border-color: #B21508 #B21508 #B21508;
+	filter: progid :   DXImageTransform.Microsoft.gradient (   startColorstr
+		= 
+		 '#CA281C', endColorstr =   '#B21508', GradientType =   0 );
+	filter: progid :   DXImageTransform.Microsoft.gradient (   enabled =  
+		false );
+}
+		
+.btn-statix:hover,.btn-statix:active {
+	text-shadow: 0 -1px 0 #B21508;
+	background-color: #B21508;
+}
+
+.logo h1 a .white {
+	text-shadow: 0 -1px 0 #540000;
+}

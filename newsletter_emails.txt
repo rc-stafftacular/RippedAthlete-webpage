@@ -1,0 +1,4 @@
+/*
+ * Emails submitted from the subscription box will be appended here
+ */
+
